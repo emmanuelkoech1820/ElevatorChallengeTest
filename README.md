@@ -3,7 +3,7 @@ This project simulates multi-floor, multi-elevator operation, efficiently managi
 
 
 Get Started
-Ready to dive into the Elevator Control App? Here's how to get going:
+Here's how to get going:
 
 Clone the Repository: Grab the code by cloning this repository.
 Open the Solution: Open it up in your favorite coding environment
