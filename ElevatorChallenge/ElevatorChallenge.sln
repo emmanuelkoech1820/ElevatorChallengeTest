@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35017.193
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorChallenge", "ElevatorChallenge\ElevatorChallenge.csproj", "{83E2D22D-7EAE-411F-BDA4-9D0298507D1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevatorChallenge", "ElevatorChallenge\ElevatorChallenge.csproj", "{83E2D22D-7EAE-411F-BDA4-9D0298507D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorTests", "ElevatorTests\ElevatorTests.csproj", "{331AEB6D-76C6-48D2-9779-077748E26010}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{83E2D22D-7EAE-411F-BDA4-9D0298507D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83E2D22D-7EAE-411F-BDA4-9D0298507D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83E2D22D-7EAE-411F-BDA4-9D0298507D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331AEB6D-76C6-48D2-9779-077748E26010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331AEB6D-76C6-48D2-9779-077748E26010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331AEB6D-76C6-48D2-9779-077748E26010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331AEB6D-76C6-48D2-9779-077748E26010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
