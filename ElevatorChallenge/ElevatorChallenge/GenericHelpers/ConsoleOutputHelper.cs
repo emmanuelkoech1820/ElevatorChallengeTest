@@ -13,8 +13,8 @@ namespace ElevatorChallenge.Helpers
         }
         public void UpdateOutputSection(IEnumerable<ElevatorStatus> elevatorStatusList)
         {
-            Console.SetCursorPosition(0, 1); // Move cursor to a specific position1
-            Console.WriteLine("Input Section (originFloor; destinationFloor; passengers):");
+            Console.SetCursorPosition(0, 1); 
+            Console.WriteLine("Key in the floor number, destination floor and No of passegers (originFloor; destinationFloor; passengers):");
 
             // Display the output matrix
             Console.SetCursorPosition(0, 10);
