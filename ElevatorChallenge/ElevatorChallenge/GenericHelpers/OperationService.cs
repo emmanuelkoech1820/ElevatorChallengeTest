@@ -17,15 +17,11 @@ namespace ElevatorChallenge.Helpers
             _elevatorThreadManager = elevatorThreadManager;
             _diplayHelper = displayHelper;
         }
-
-        ///<inheritdoc/>
         public async Task StartElevatorThreads()
         {
             var elevators = await _controlCentreService.GetElevators();
             _elevatorThreadManager.StartElevatorThreadsAsync(elevators);
         }
-
-        ///<inheritdoc/>
         public async Task StartTheElevatorSystemIOMonitoringProcessAsync()
         {
             await Task.Run(async () =>
@@ -39,7 +35,7 @@ namespace ElevatorChallenge.Helpers
                     _diplayHelper.UpdateOutputSection(_elevatorStatuses);
 
                     // Delay before updating again
-                    await Task.Delay(TimeSpan.FromSeconds(0.25));
+                    await Task.Delay(TimeSpan.FromSeconds(1));
 
                     // Check for user input without blocking
                     if (Console.KeyAvailable)
@@ -50,13 +46,6 @@ namespace ElevatorChallenge.Helpers
                 }
             });
         }
-
-        /// <summary>
-        /// Takes in the user console input as string, parses it
-        /// and submits a pickup request to the elevator control center
-        /// </summary>
-        /// <param name="input">user console input</param>
-        /// <returns></returns>
         private async Task ConvertConsoleInputToPaseengerRequestAndSubmitAsync(string input)
         {
             try

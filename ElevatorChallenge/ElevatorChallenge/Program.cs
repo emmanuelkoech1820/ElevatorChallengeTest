@@ -1,7 +1,7 @@
 ﻿using ElevatorChallenge.Core.Contracts;
+using ElevatorChallenge.Core.Implementations;
 using ElevatorChallenge.Helpers;
 using ElevatorChallenge.Models;
-using ElevatorChallenge.Services.Implementations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -20,7 +20,7 @@ namespace ElevatorChallenge
             .AddScoped<IOperationService, OperationService>()
             .AddSingleton<IConsoleOutputHelper, ConsoleOutputHelper>()
             .AddSingleton<IElevatorThreadManager, ElevatorThreadManager>()
-            .AddSingleton<IControlService, ControlCentreService>()
+            .AddSingleton<IControlService, ControlService>()
             .Configure<ElevatorConfiguration>(configuration.GetSection("ElevatorConfiguration"))
             .BuildServiceProvider();
             try

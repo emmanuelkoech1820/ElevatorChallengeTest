@@ -35,7 +35,7 @@ namespace ElevatorChallenge.Helpers
                 Console.Write(floorNumbers[floor]);
                 foreach (var elevatorStatus in elevatorStatuses)
                 {
-                    string position = elevatorStatus.CurrentFloor == floorNumbers[floor] ? $"==={elevatorStatus.Load}===" : "       ";
+                    string position = elevatorStatus.CurrentFloor == floorNumbers[floor] ? $"***{elevatorStatus.Load}***" : "       ";
                     Console.Write($"|{position}");
                 }
                 Console.WriteLine('|');
@@ -46,7 +46,7 @@ namespace ElevatorChallenge.Helpers
             {
                 Console.Write($"   " +
                     $"{ElevatorNamesHelper.GetElevatorName(elevatorStatus.ElevatorNumber)}" +
-                    $"   |");
+                    $"   ||");
             }
             Console.WriteLine();
         }
