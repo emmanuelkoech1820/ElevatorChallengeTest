@@ -14,9 +14,10 @@ This project simulates multi-floor, multi-elevator operation, efficiently managi
 -  Real-Time Status Updates: Get live updates on elevator statuses.
 -  Handle Passenger Requests: Assign tasks to elevators by sending passenger requests.
 - User-Friendly Console Interface: Enjoy a clean and straightforward console UI.
-## Unit Tests: The app comes with a suite of tests to ensure everything works perfectly
+### Unit Tests
+- The app comes with a suite of tests to ensure everything works perfectly
 ## Configuration
-- Want to customize the Elevator Control App? You can easily tweak settings using the appsettings.json file. Adjust parameters like the number of elevators, floors, weight limits, and the time required to handle passengers and move between floors.
+- You can easily tweak settings using the appsettings.json file. Adjust parameters like the number of elevators, floors, weight limits, and the time required to handle passengers and move between floors.
 
 ## To customize the app:
 
